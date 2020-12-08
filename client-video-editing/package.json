@@ -1,0 +1,32 @@
+{
+  "name": "client-video-editing",
+  "version": "1.0.0",
+  "description": "A video editing application for clientside video cut",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run client\" \"npm run server\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.heroku.com/client-video-editing.git"
+  },
+  "keywords": [
+    "video",
+    "wasm",
+    "ffmpeg",
+    "react"
+  ],
+  "author": "André Mörke",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6"
+  }
+}
